@@ -9,7 +9,7 @@ boton.addEventListener("click", () => {
   let ciudad = document.getElementById("ciudad").value;
 
 
-  fetch(`http://api.weatherapi.com/v1/current.json?key=${YOUR_API_KEY}&q=${ciudad}&lang=es`)
+  fetch(`https://api.weatherapi.com/v1/current.json?key=${YOUR_API_KEY}&q=${ciudad}&lang=es`)
     .then(response => response.json())
     .then(data => {
       showData(data)
